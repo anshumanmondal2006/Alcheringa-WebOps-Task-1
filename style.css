@@ -1,0 +1,334 @@
+.headerContainer {
+    background-color: #333333;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerContainer .homeButton {
+    font-size: 24px;
+    color: #04ffcd;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.headerContainer .homeButton i {
+    margin-right: 5px;
+}
+
+.headerContainer .userInfo {
+    display: flex;
+    align-items: center;
+}
+
+.headerContainer .userAvatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #a0b49b;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ddd;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.headerContainer .userName {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.headerContainer .userName h1 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: normal;
+    color: #fff;
+}
+
+.headerContainer .userName span {
+    color: #f80000;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.mainContainer {
+    flex-direction: column;
+    display: flex;
+    height: 100vh;
+}
+
+.sideMenu {
+    max-width: 250px;
+    flex-shrink: 0;
+    color: white;
+    flex-direction: column;
+    width: 250px;
+    display: flex;
+    background-color: #333;
+}
+
+.sideMenu .newItemButton {
+    padding: 10px;
+    flex-shrink: 0;
+}
+
+.sideMenu .newItemButton button {
+    background-color: white;
+    color: #333;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.sideMenu .newItemButton button i {
+    margin-right: 5px;
+}
+
+.sideMenu .menuList {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.sideMenu .menuList .menuItem {
+    cursor: pointer;
+    padding: 10px 0;
+}
+
+.sideMenu .menuList .menuItem i {
+    margin-right: 10px;
+}
+
+.dropdownMenu {
+    display: none;
+    padding-left: 20px;
+}
+
+.dropdownMenu .dropdownItem {
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dropdownMenu .dropdownItem:hover {
+    background-color: #3b5998;
+}
+
+.mainContent {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 0;
+}
+
+.welcomeSection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.welcomeSection .welcomeText {
+    font-size: 48px;
+    font-weight: bold;
+    color: #333333;
+    margin: 0;
+}
+
+.welcomeSection .userInfo {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.welcomeSection .userAvatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #aeafc7;
+    margin-right: 15px;
+}
+
+.welcomeSection .userName {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.welcomeSection .userName h1 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.welcomeSection .userName span {
+    color: #555555;
+}
+
+.form {
+    margin-bottom: 20px;
+}
+
+.form h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.form p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.errorBox {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border: 5px solid #f5c6cb;
+    border-style: groove;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.errorBox i {
+    margin-right: 10px;
+}
+
+.tableContainer {
+    overflow-x: auto;
+}
+
+.tableContainer table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.tableContainer th,
+.tableContainer td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+.tableContainer th {
+    background-color: #f2f2f2;
+}
+
+.tableContainer button {
+    padding: 5px 10px;
+    margin: 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+.tableContainer button i {
+    margin-right: 5px;
+}
+
+.tableContainer button.editButton {
+    background-color: #00ff04;
+    color: #333;
+}
+
+.tableContainer button.deleteButton {
+    background-color: #ff3300;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .sideMenu {
+        width: 100%;
+        height: auto;
+    }
+
+    .mainContent {
+        padding: 10px;
+    }
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.userInfo1 {
+    display: flex;
+    align-items: center;
+    background-color: rgb(4, 0, 255);
+    border-radius: 15px;
+    padding: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.userAvatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #cccccc;
+    margin-right: 10px;
+}
+
+.userName h1 {
+    margin: 0;
+    font-size: 18px;
+    color: #333333;
+}
+
+.headerContainer .userAvatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ff0000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    border: 2px solid #ddd;
+
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+
+}
+
+.headerContainer .userName {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.headerContainer .userName h1 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: normal;
+    color: #fff;
+}
+
+.headerContainer .userName span {
+    color: #f80000;
+}
+
+@media (min-width: 768px) {
+    .mainContainer {
+        flex-direction: row;
+    }
+}
